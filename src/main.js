@@ -14,6 +14,7 @@ fastClick.attach(document.body)
 
 Vue.prototype.request = util.request
 Vue.prototype.obj = util.obj
+Vue.prototype.post = util.post
 Vue.use(util)
 /* eslint-disable no-new */
 new Vue({

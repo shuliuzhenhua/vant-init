@@ -12,9 +12,13 @@ import 'styles/border.css'
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 
-Vue.prototype.request = util.request
+Vue.prototype.$request = util.request
+Vue.prototype.$get = util.get
+Vue.prototype.$post = util.post
+Vue.prototype.$put = util.put
+Vue.prototype.$delete = util.del
 Vue.prototype.obj = util.obj
-Vue.prototype.post = util.post
+
 Vue.use(util)
 /* eslint-disable no-new */
 new Vue({

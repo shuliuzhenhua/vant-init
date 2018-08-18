@@ -9,6 +9,8 @@ import util from './util'
 import 'styles/reset.css'
 import 'styles/border.css'
 
+require('./common') // 需要引入切直接执行的js 代码
+
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 
